@@ -1,0 +1,29 @@
+# Залежності
+/node_modules
+
+# Каталоги збірки
+/dist
+/build
+
+# Файли журналів
+npm-debug.log
+yarn-error.log
+
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Директорії редакторів коду
+.idea
+.vscode
+
+# Файли конфігурації пакетного менеджера
+yarn.lock
+package-lock.json
+
+# Файли та папки, що згенеровані IDE та іншими інструментами
+*.log
+*.tmp
+*.temp
+
+bundle.js

@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.App {
+  /* margin: 100px; */
+  height: 4000px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #141418;
+}
+
+html {
+  line-height: 1.15;
+  font: 20px Arial, sans-serif;
+  
+}
+
+.box-wrapper {
+  width: 95%;
+  border-radius: 15px;
+  margin: 15px;
+  border: 1px solid #ccc;
+}
+
+.box {
+  align-items: stretch;
+  justify-content: center;
+  background-color: #1f1f25;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+.image-container {
+  margin: auto;
+  background-color: #25252f;
+  border-radius: 15px;
+  padding: inherit;
+  border: 1px solid #15e865;
+  max-width: 45%;
+}
+
+.canvas-container {
+  padding: auto;
+  margin: auto;
+  background-color: #25252f;
+  border-radius: 15px;
+  padding: inherit;
+  border: 1px solid #15e865;
+  max-width: 45%;
+}
+
+.popup {
+  width: 800px;
+  height: 600px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  position: absolute;
+  z-index: 1;
+  box-shadow:0 0 0 1600px rgba(0,0,0,0.65);/* dark around it */
+  background-color: #25252f;
+  border: 1px solid #15e865;
+  border-radius: 15px;
+}
+
+button {
+  color: #ccc;
+  margin: 25px;
+  width: 100px;
+  height: 60px;
+  font: 20px Arial, sans-serif;
+  background-color: #25252f;
+  border: 1px solid #15e865;
+  border-radius: 10px;
+}
+
+.frame-container {
+  position: relative;
+}
+
+.frame {
+  position: relative;
+  border-radius: 2px;
+  border: 5px solid linear-gradient(to right, #15e865, #d1f7db, #ffffff, #d1f7db, #15e865);
+  background-clip: padding-box;
+}
+
+.frame:hover {
+  animation: iridescent-border 2s ease infinite;
+}
+
+@keyframes iridescent-border {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #15e865;
+  }
+  100% {
+    border-color: transparent;
+  }
+}

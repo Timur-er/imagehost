@@ -1,0 +1,107 @@
+<div>
+    <div className="box-wrapper">
+        <div className="box">
+            <div className="image-container"><img ref={imgRef1x1} src={imgSrc}>
+                {!!imgSrc && (
+                    <ReactCrop
+                    crop={crop16x9}
+                    onChange={(_, percentCrop) => setCrop16x9(percentCrop)}
+                    onComplete={c => setCompletedCrop16x9(c)}
+                    aspect={aspect16x9}
+                    >
+                    <img
+                        ref={imgRef16x9}
+                        alt="Crop me"
+                        src={imgSrc}
+                        style={{ transform: `scale(${scale}) rotate(${rotate}deg)` }}
+                        onLoad={onImageLoad}
+                    />
+                    </ReactCrop>
+                )}
+            </div>
+            <div className="image-container">
+              {!!completedCrop16x9 && (
+                <canvas
+                  ref={previewCanvasRef16x9}
+                  style={{
+                    border: '1px solid black',
+                    objectFit: 'contain',
+                    width: completedCrop16x9.width,
+                    height: completedCrop16x9.height,
+                  }}
+                />
+              )}
+            </div>
+        </div>
+     </div>
+     <div className="box-wrapper">
+        <div className="box">
+            <div className="image-container"><img ref={imgRef1x1} src={imgSrc}>
+                {!!imgSrc && (
+                    <ReactCrop
+                    crop={crop16x9}
+                    onChange={(_, percentCrop) => setCrop16x9(percentCrop)}
+                    onComplete={c => setCompletedCrop16x9(c)}
+                    aspect={aspect16x9}
+                    >
+                    <img
+                        ref={imgRef16x9}
+                        alt="Crop me"
+                        src={imgSrc}
+                        style={{ transform: `scale(${scale}) rotate(${rotate}deg)` }}
+                        onLoad={onImageLoad}
+                    />
+                    </ReactCrop>
+                )}
+            </div>
+            <div className="image-container">
+              {!!completedCrop16x9 && (
+                <canvas
+                  ref={previewCanvasRef16x9}
+                  style={{
+                    border: '1px solid black',
+                    objectFit: 'contain',
+                    width: completedCrop16x9.width,
+                    height: completedCrop16x9.height,
+                  }}
+                />
+              )}
+            </div>
+        </div>
+     </div>
+     <div className="box-wrapper">
+        <div className="box">
+            <div className="image-container"><img ref={imgRef1x1} src={imgSrc}>
+                {!!imgSrc && (
+                    <ReactCrop
+                    crop={crop16x9}
+                    onChange={(_, percentCrop) => setCrop16x9(percentCrop)}
+                    onComplete={c => setCompletedCrop16x9(c)}
+                    aspect={aspect16x9}
+                    >
+                    <img
+                        ref={imgRef16x9}
+                        alt="Crop me"
+                        src={imgSrc}
+                        style={{ transform: `scale(${scale}) rotate(${rotate}deg)` }}
+                        onLoad={onImageLoad}
+                    />
+                    </ReactCrop>
+                )}
+            </div>
+            <div className="image-container">
+              {!!completedCrop16x9 && (
+                <canvas
+                  ref={previewCanvasRef16x9}
+                  style={{
+                    border: '1px solid black',
+                    objectFit: 'contain',
+                    width: completedCrop16x9.width,
+                    height: completedCrop16x9.height,
+                  }}
+                />
+              )}
+            </div>
+        </div>
+     </div>
+</div>
